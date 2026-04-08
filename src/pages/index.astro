@@ -4,65 +4,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout
   title="freeofmoney.pro"
-  description="freeofmoney.pro：书籍与个人项目主页。"
+  description="freeofmoney.pro：CZ 币安人生交互时间线。"
 >
   <section class="hero">
-    <p class="kicker">Book Shelf · Notes · Projects</p>
+    <p class="kicker">Timeline · Interactive Story</p>
     <h1>Free Of Money</h1>
     <p class="lead">
-      这是我的公开工作台。先把最近在读的一本书放上来，后续继续补充读书笔记和项目进展。
+      这里展示 CZ 币安人生交互时间线内容。
     </p>
     <div class="actions">
-      <a class="button primary" href="#book">在线阅读</a>
-      <a class="button" href="/books/CZ_币安人生.pdf" download>下载 PDF</a>
+      <a class="button primary" href="#timeline">查看时间线</a>
+      <a class="button" href="https://bianrensheng.io/" target="_blank" rel="noreferrer">新窗口打开</a>
     </div>
   </section>
 
-  <section id="book" class="panel">
-    <h2>本周在读</h2>
-    <div class="book-meta">
-      <p><strong>书名：</strong>幣安人生：幸運、韌性與保護用戶的回憶錄</p>
-      <p><strong>作者：</strong>Zhao, Changpeng</p>
-      <p><strong>页数：</strong>240 页</p>
-      <p><strong>格式：</strong>PDF</p>
-    </div>
-    <div class="book-actions">
-      <a class="button primary" href="/books/CZ_币安人生.pdf" target="_blank" rel="noreferrer">新窗口预览</a>
-      <a class="button" href="/books/CZ_币安人生.pdf" download>下载到本地</a>
-    </div>
+  <section id="timeline" class="panel">
+    <h2>CZ 币安人生 · 交互时间线</h2>
+    <p class="lead">已移除 PDF 展示，改为直接展示网站内容。</p>
     <div class="pdf-frame-wrap">
       <iframe
-        title="幣安人生 PDF 预览"
-        src="/books/CZ_币安人生.pdf#view=FitH"
+        title="CZ 币安人生交互时间线"
+        src="https://bianrensheng.io/"
         class="pdf-frame"
       ></iframe>
-    </div>
-  </section>
-
-  <section id="now" class="panel">
-    <h2>Now</h2>
-    <ul class="list">
-      <li>把常读书单和笔记同步到主页。</li>
-      <li>维护自动化流程与知识库。</li>
-      <li>持续迭代个人工具和小型产品。</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="panel">
-    <h2>Projects (Next)</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>Knowledge OS</h3>
-        <p>整理通讯录知识库与检索流程，降低信息查找成本。</p>
-      </article>
-      <article class="card">
-        <h3>OpenClaw Ops</h3>
-        <p>持续修复执行链路和记忆机制，提升稳定性与可验证性。</p>
-      </article>
-      <article class="card">
-        <h3>Automation Stack</h3>
-        <p>把日常检查和任务触发做成标准化流水线。</p>
-      </article>
     </div>
   </section>
 </BaseLayout>
