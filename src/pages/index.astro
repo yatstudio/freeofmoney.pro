@@ -4,50 +4,64 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout
   title="freeofmoney.pro"
-  description="变人生：一个简洁、持续更新的个人站点。"
+  description="freeofmoney.pro：书籍与个人项目主页。"
 >
   <section class="hero">
-    <p class="kicker">Personal Notes · Projects · Logs</p>
-    <h1>变人生</h1>
+    <p class="kicker">Book Shelf · Notes · Projects</p>
+    <h1>Free Of Money</h1>
     <p class="lead">
-      一个长期维护的个人站点，记录正在做的事情、正在思考的问题，以及正在迭代的项目。
+      这是我的公开工作台。先把最近在读的一本书放上来，后续继续补充读书笔记和项目进展。
     </p>
     <div class="actions">
-      <a class="button primary" href="#projects">看项目</a>
-      <a class="button" href="#now">看近况</a>
+      <a class="button primary" href="#book">在线阅读</a>
+      <a class="button" href="/books/CZ_币安人生.pdf" download>下载 PDF</a>
     </div>
   </section>
 
-  <section id="about" class="panel">
-    <h2>About</h2>
-    <p>
-      这里采用 GitHub Minimal 风格：信息优先、结构清晰、长期可维护。你可以把它当成公开版工作台。
-    </p>
+  <section id="book" class="panel">
+    <h2>本周在读</h2>
+    <div class="book-meta">
+      <p><strong>书名：</strong>幣安人生：幸運、韌性與保護用戶的回憶錄</p>
+      <p><strong>作者：</strong>Zhao, Changpeng</p>
+      <p><strong>页数：</strong>240 页</p>
+      <p><strong>格式：</strong>PDF</p>
+    </div>
+    <div class="book-actions">
+      <a class="button primary" href="/books/CZ_币安人生.pdf" target="_blank" rel="noreferrer">新窗口预览</a>
+      <a class="button" href="/books/CZ_币安人生.pdf" download>下载到本地</a>
+    </div>
+    <div class="pdf-frame-wrap">
+      <iframe
+        title="幣安人生 PDF 预览"
+        src="/books/CZ_币安人生.pdf#view=FitH"
+        class="pdf-frame"
+      ></iframe>
+    </div>
   </section>
 
   <section id="now" class="panel">
     <h2>Now</h2>
     <ul class="list">
+      <li>把常读书单和笔记同步到主页。</li>
       <li>维护自动化流程与知识库。</li>
       <li>持续迭代个人工具和小型产品。</li>
-      <li>每周固定更新站点日志与项目状态。</li>
     </ul>
   </section>
 
   <section id="projects" class="panel">
-    <h2>Projects</h2>
+    <h2>Projects (Next)</h2>
     <div class="grid">
       <article class="card">
-        <h3>Project A</h3>
-        <p>用一句话描述这个项目解决了什么问题。</p>
+        <h3>Knowledge OS</h3>
+        <p>整理通讯录知识库与检索流程，降低信息查找成本。</p>
       </article>
       <article class="card">
-        <h3>Project B</h3>
-        <p>写下当前进度、下一步计划和关键里程碑。</p>
+        <h3>OpenClaw Ops</h3>
+        <p>持续修复执行链路和记忆机制，提升稳定性与可验证性。</p>
       </article>
       <article class="card">
-        <h3>Project C</h3>
-        <p>补充链接、截图或更新日志，方便后续扩展。</p>
+        <h3>Automation Stack</h3>
+        <p>把日常检查和任务触发做成标准化流水线。</p>
       </article>
     </div>
   </section>
