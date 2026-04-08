@@ -15,16 +15,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <div class="actions">
       <a class="button primary" href="#timeline">查看时间线</a>
       <a class="button" href="https://bianrensheng.io/" target="_blank" rel="noreferrer">新窗口打开</a>
+      <a class="button" href="#pdf">查看 PDF</a>
     </div>
   </section>
 
   <section id="timeline" class="panel">
     <h2>CZ 币安人生 · 交互时间线</h2>
-    <p class="lead">已移除 PDF 展示，改为直接展示网站内容。</p>
+    <p class="lead">交互站点内容。</p>
     <div class="pdf-frame-wrap">
       <iframe
         title="CZ 币安人生交互时间线"
         src="https://bianrensheng.io/"
+        class="pdf-frame"
+      ></iframe>
+    </div>
+  </section>
+
+  <section id="pdf" class="panel">
+    <h2>原书 PDF</h2>
+    <p class="lead">文件：CZ_币安人生.pdf（240 页）。</p>
+    <div class="actions">
+      <a class="button primary" href="/books/CZ_币安人生.pdf" target="_blank" rel="noreferrer">在线打开 PDF</a>
+      <a class="button" href="/books/CZ_币安人生.pdf" download>下载 PDF</a>
+    </div>
+    <div class="pdf-frame-wrap">
+      <iframe
+        title="币安人生 PDF"
+        src="/books/CZ_币安人生.pdf#view=FitH"
         class="pdf-frame"
       ></iframe>
     </div>
